@@ -1,0 +1,19 @@
+File Name,Condition,Cell Type
+Neu1_GFP_S2S_*,GFP (Control),Neuron
+Neu2_GFP_S2S_*,GFP (Control),Neuron
+Neu3_GFP_S2S_*,GFP (Control),Neuron
+Neu1_M2_S2S_*,Mecp2 (M2),Neuron
+Neu2_M2_S2S_*,Mecp2 (M2),Neuron
+Neu3_M2_S2S_*,Mecp2 (M2),Neuron
+Neu1_S3_*,S3 Phase,Neuron
+Neu2_S3_*,S3 Phase,Neuron
+Neu3_S3_*,S3 Phase,Neuron
+NSC1_GFP_S2S_*,GFP (Control),NPC
+NSC2_GFP_S2S_*,GFP (Control),NPC
+NSC3_GFP_S2S_*,GFP (Control),NPC
+NSC1_M2_S2S_*,Mecp2 (M2),NPC
+NSC2_M2_S2S_*,Mecp2 (M2),NPC
+NSC3_M2_S2S_*,Mecp2 (M2),NPC
+NSC1_S3_*,S3 Phase,NPC
+NSC2_S3_*,S3 Phase,NPC
+NSC3_S3_*,S3 Phase,NPC
