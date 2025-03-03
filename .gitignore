@@ -6,3 +6,12 @@
 *.sam
 *.bai
 *.bw
+gencode.vM25.basic.annotation.gtf
+**/cache/
+
+results_old/
+
+./results/analysis/Neu_chromatin_changes_all.csv
+./results/analysis/NSC_chromatin_changes_significant.csv
+./results/analysis/NSC_chromatin_changes_all.csv
+./results/analysis/Neu_chromatin_changes_significant.csv
