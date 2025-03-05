@@ -1,2 +1,4 @@
-Neurons_state,Mixed
-Mixed,284
+Neurons_state,Euchromatin,Mixed
+Euchromatin,0.0,4.0
+Heterochromatin,0.0,20.0
+Mixed,6.0,254.0

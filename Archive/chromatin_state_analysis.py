@@ -68,7 +68,7 @@ class ChromatinStateAnalysis:
 
 def main():
     # Initialize analysis
-    data_dir = Path("/beegfs/scratch/ric.broccoli/kubacki.michal/Sammy/DATA/Sammy_Seq_fastq")
+    data_dir = Path("/beegfs/scratch/ric.broccoli/kubacki.michal/SRF_Sammy/DATA/Sammy_Seq_fastq")
     analysis = ChromatinStateAnalysis(data_dir)
     
     # Run analysis
