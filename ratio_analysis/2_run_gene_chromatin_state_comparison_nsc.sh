@@ -67,7 +67,7 @@ base_dir="/beegfs/scratch/ric.broccoli/kubacki.michal/SRF_Sammy"
 
 # Set variables
 GENE_LIST="${base_dir}/figures/genelists/NSC_exo.txt"
-RESULTS_DIR="${base_dir}/ratio_analysis/results"
+RESULTS_DIR="${base_dir}/ratio_analysis/results/shift_GFP_M2_with_blacklist_with_mirko_gene_lists"
 OUTPUT_DIR="${base_dir}/ratio_analysis/results/nsc_enriched_comparison_mirko_gene_lists"
 GENOME_GTF="${base_dir}/DATA/gencode.vM25.basic.annotation.gtf"
 PROMOTER_SIZE=2000
