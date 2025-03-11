@@ -21,5 +21,5 @@ ratio_analysis/adapters/TruSeq3-SE-2.fa
 ratio_analysis/mm10/
 ratio_analysis/references/
 ratio_analysis/results/bam/
-ratio_analysis/results/py_implementation/tmp/
-ratio_analysis/results/py_implementation_with_blacklist/merged_blacklist.bed
+ratio_analysis/results/shift_GFP_M2/tmp/
+ratio_analysis/results/shift_GFP_M2_with_blacklist/merged_blacklist.bed
