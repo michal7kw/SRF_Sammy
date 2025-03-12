@@ -1,6 +1,0 @@
-transition,count,percentage
-Intermediate,259375,95.16
-B,11180,4.1
-A,1938,0.71
-A->B,62,0.02
-B->A,9,0.0

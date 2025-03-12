@@ -121,6 +121,9 @@ def analyze_broad_chromatin_changes(results_dir, window_size, genome_size, ratio
     Analyze chromatin state changes between GFP and M2 conditions over broad genomic regions
     """
     bedgraph_dir = os.path.join(results_dir, "bedgraph")
+    # Create output directory for shifted regions
+    shifted_regions_dir = os.path.join(results_dir, "shifted_regions")
+    os.makedirs(shifted_regions_dir, exist_ok=True)
     
     # Define comparisons
     comparisons = [
@@ -208,6 +211,35 @@ def analyze_broad_chromatin_changes(results_dir, window_size, genome_size, ratio
         b_to_a_windows = merged_windows[
             (merged_windows['ratio_change'] <= -ratio_change_threshold)
         ]
+        
+        # Save shifted regions to BED files
+        comp_name_safe = comp['name'].replace(' ', '_')
+        
+        # Save A to B regions
+        a_to_b_bed = os.path.join(shifted_regions_dir, f"{comp_name_safe}_A_to_B.bed")
+        a_to_b_windows[['chrom', 'start', 'end', 'ratio_change']].to_csv(
+            a_to_b_bed, sep='\t', header=False, index=False
+        )
+        logger.info(f"  Saved {len(a_to_b_windows)} A→B regions to {a_to_b_bed}")
+        
+        # Save B to A regions
+        b_to_a_bed = os.path.join(shifted_regions_dir, f"{comp_name_safe}_B_to_A.bed")
+        b_to_a_windows[['chrom', 'start', 'end', 'ratio_change']].to_csv(
+            b_to_a_bed, sep='\t', header=False, index=False
+        )
+        logger.info(f"  Saved {len(b_to_a_windows)} B→A regions to {b_to_a_bed}")
+        
+        # Save detailed information including all scores
+        a_to_b_detailed = os.path.join(shifted_regions_dir, f"{comp_name_safe}_A_to_B_detailed.tsv")
+        b_to_a_detailed = os.path.join(shifted_regions_dir, f"{comp_name_safe}_B_to_A_detailed.tsv")
+        
+        # Save detailed A to B regions with headers
+        a_to_b_windows.to_csv(a_to_b_detailed, sep='\t', index=False)
+        logger.info(f"  Saved detailed A→B data to {a_to_b_detailed}")
+        
+        # Save detailed B to A regions with headers
+        b_to_a_windows.to_csv(b_to_a_detailed, sep='\t', index=False)
+        logger.info(f"  Saved detailed B→A data to {b_to_a_detailed}")
         
         # Calculate total base pairs for each transition
         a_to_b_bp = a_to_b_windows['end'].sum() - a_to_b_windows['start'].sum()

@@ -1,0 +1,4 @@
+chrom	start	end	ratio_change	gene_id	gene_name	gene_type	overlap_type	strand
+chr16	74250000	74400000	0.1188263999999999	ENSMUSG00000052516.19	Robo2	protein_coding	gene_body	-
+chr16	74250000	74400000	0.1188263999999999	ENSMUSG00000116824.1	Gm18021	processed_pseudogene	promoter_downstream	+
+chr16	74250000	74400000	0.1188263999999999	ENSMUSG00000104758.1	Mir691	miRNA	partial	-

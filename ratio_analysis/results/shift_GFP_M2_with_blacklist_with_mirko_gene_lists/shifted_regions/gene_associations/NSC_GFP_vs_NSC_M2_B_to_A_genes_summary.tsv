@@ -1,0 +1,16 @@
+gene_type	count
+TEC	19
+antisense	40
+bidirectional_promoter_lncRNA	4
+lincRNA	43
+miRNA	23
+misc_RNA	1
+processed_pseudogene	22
+processed_transcript	11
+protein_coding	315
+rRNA	2
+sense_intronic	3
+snRNA	6
+snoRNA	2
+transcribed_processed_pseudogene	2
+unprocessed_pseudogene	3
