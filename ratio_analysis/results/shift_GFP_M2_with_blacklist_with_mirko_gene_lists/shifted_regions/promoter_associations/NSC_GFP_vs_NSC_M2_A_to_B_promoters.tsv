@@ -1,0 +1,2 @@
+chrom	start	end	ratio_change	gene_id	gene_name	gene_type	overlap_type	strand	tss	distance_to_tss
+chr16	74250000	74400000	0.1188263999999999	ENSMUSG00000104758.1	Mir691	miRNA	promoter	-	74342067	57933
